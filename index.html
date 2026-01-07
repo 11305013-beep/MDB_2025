@@ -28,8 +28,8 @@
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@450&display=swap');
-       @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@300&display=swap');
-
+      @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap');
 
        h3{
         font-family: "Noto Serif TC", serif;
@@ -44,6 +44,10 @@
       }
 
 
+       h5{
+        font-family: "Chiron GoRound TC", sans-serif;
+        font-weight: 400;
+      }
 
 
 
@@ -75,7 +79,7 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top navbar-scroll" data-mdb-navbar-init>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#!">新濱町</a>
+          <a class="navbar-brand" href="#!"><i class="fas fa-seedling"></i> 新濱町</a>
           <button class="navbar-toggler" type="button" data-mdb-collapse-init
             data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -335,7 +339,7 @@
             <p class="card-text">
               觀光意象形成是動態過程，受媒體、他人推薦與親身經驗影響，並隨著資訊修正而不斷產生新意象與認知。
             </p>
-            <a href="#!" class="btn btn-primary btn-rounded" data-mdb-ripple-init>more</a>
+            <a href="#!" class="btn btn-primary btn-rounded" data-mdb-ripple-init><i class="far fa-paper-plane"></i> more</a>
           </div>
         </div>
       </div>
@@ -369,7 +373,7 @@
             <p class="card-text">
               地方依附是個人對地方的情感連結與認同，強調情感、認知與功能聯繫，影響人與地方的融合感與依賴。
             </p>
-            <a href="#!" class="btn btn-primary btn-rounded" data-mdb-ripple-init>more</a>
+            <a href="#!" class="btn btn-primary btn-rounded" data-mdb-ripple-init><i class="far fa-paper-plane"></i> more</a>
           </div>
         </div>
       </div>
@@ -403,7 +407,7 @@
             <p class="card-text">
               文化資產包括有形與無形資源，承載歷史與文化記憶，對文化身份的傳承與保護至關重要，促進文化交流與社會凝聚力。
             </p>
-            <a href="#!" class="btn btn-primary btn-rounded" data-mdb-ripple-init>more</a>
+            <a href="#!" class="btn btn-primary btn-rounded" data-mdb-ripple-init><i class="far fa-paper-plane"></i> more</a>
           </div>
         </div>
       </div>
@@ -642,10 +646,14 @@
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <img class="shadow-4 rounded-5 w-100" src="./img/1000006795-1222.jpg"
-                    data-mdb-img="./img/1000006795-1222.jpg" alt="" />
+                    data-mdb-img="./img/1000006795-1222.jpg" alt="新濱町" />
                 </div>
                 <div class="col-md-6 mb-4">
-                  <img class="shadow-4 rounded-5 w-100  d-none d-md-block " src="./img/1000006824.jpg"
+                  <img class="shadow-4 rounded-5 w-100  d-none d-md-block "
+                    data-mdb-animation-init
+                    data-mdb-animation-start="onHover"
+                    data-mdb-animation-reset="true"
+                    data-mdb-animation="slide-right" src="./img/1000006824.jpg"
                     data-mdb-img="./img/1000006824.jpg" alt="高雄驛（高雄港車站）" />
                 </div>
               </div>
@@ -1071,6 +1079,7 @@
 
             <div class="col-md-8 mb-4  text-justify ">
               <h5>街屋</h5>
+
               <p class="fst-italic">
                 高雄新濱町一丁目連棟紅磚街屋是建於1933年的歷史建築，是哈瑪星少數僅存的日治時期紅磚街屋，鄰近新濱碼頭、打狗港和高雄驛，曾是肥料、青果、米穀等批發集散中心，由楊家興建。「其家族成員楊天送創立了南部青果株式會社及協和運輸組，有南部青果界的成功者之稱」(Adela Cheng，2022)。外型為紅磚造連棟式街屋，二樓高，沿街面而建，結構為磚石承重。採「四柱三開窗」設計，牆體則使用清水紅磚、洗石子、面磚和水泥粉光等。女兒牆為圓弧造型，幾何圖形與日出紋是其獨特標誌。2022年台灣文博會期間首度對外開放，以《山海商號‧紅磚街屋》之名亮相。現今作為地方物產設計展與直賣所，展售高雄物產、青年設計商品及職人手作物品。
               </p>
@@ -1443,6 +1452,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--
       Text 設定
       https://mdbootstrap.com/docs/standard/utilities/text/
@@ -1650,10 +1681,7 @@
 
 
 
-        <img id="animationDemo" data-mdb-animation-init data-mdb-animation-start="onHover" data-mdb-animation-reset="true"
-          data-mdb-animation="slide-right" src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/tools/builders/animations/assets/logo.webp&quot;
-          class=" shadow-1-strong rounded-circle style="width: 120px" />
-
+ 
 
 
 
